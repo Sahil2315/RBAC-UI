@@ -17,7 +17,7 @@ const Container = () => {
   let [selectVisible, toggleSelect] = useState(false)
   return (
     <div>
-        <div className='fixed top-0 border-b-2 border-slate-200 left-0 py-4 h-max w-full'>
+        <div className='fixed top-0 bg-white z-10 border-b-2 border-slate-200 left-0 py-4 h-max w-full'>
             <div className='text-3xl mx-6'>RBAC - Role Based Access Control <span className='font-light'>for Online Communities</span></div>
             <div className='absolute right-0 top-0'>
             <button onClick={() => {toggleSelect(!selectVisible)}} className='mx-4 flex outline-none flex-row items-center justify-center my-4 border-2 border-slate-300 text-xl rounded-lg w-[210px]'>

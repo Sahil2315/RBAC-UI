@@ -4,10 +4,13 @@ import { RootState } from "../data/store"
 import minusLogo from "../assets/minusLogo.svg"
 import plusLogo from "../assets/pluslogo.svg"
 import { addPermission, deleteMembPerm, deletePostPerm } from "../data/roleSlice"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 const Roles = ({permissions}: {permissions: string[]}) => {
   let roles: role[] = useSelector((state: RootState) => state.roles)
+  useEffect(() => {
+    localStorage.setItem("roles-local", JSON.stringify(roles))
+  }, [roles])
   let roleDispatch = useDispatch()
   function removeMemberPermit(index: number, innerIndex: number){
     if(confirm("Confirm Deletion of Permission for the Role")){

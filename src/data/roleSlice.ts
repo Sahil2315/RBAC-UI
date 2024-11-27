@@ -1,7 +1,9 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import tempRoles from "./temp/temproles.json";
 
-const initialState = tempRoles;
+let tempLocal = localStorage.getItem('roles-local')
+let localJSON = JSON.parse(tempLocal as string)
+const initialState = localJSON ? localJSON : tempRoles;
 
 type doubleIndex = {
   outer: number;

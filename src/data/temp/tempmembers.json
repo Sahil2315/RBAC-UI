@@ -1,0 +1,52 @@
+[
+    {
+        "name": "User101",
+        "role": "Admin",
+        "status": "Active"
+    },
+    {
+        "name": "User102",
+        "role": "Moderator",
+        "status": "Active"
+    },
+    {
+        "name": "User103",
+        "role": "Contributor",
+        "status": "Active"
+    },
+    {
+        "name": "User104",
+        "role": "Contributor",
+        "status": "Inactive"
+    },
+    {
+        "name": "User105",
+        "role": "Member",
+        "status": "Active"
+    },
+    {
+        "name": "User106",
+        "role": "Member",
+        "status": "Inactive"
+    },
+    {
+        "name": "User107",
+        "role": "Member",
+        "status": "Active"
+    },
+    {
+        "name": "User108",
+        "role": "User",
+        "status": "Active"
+    },
+    {
+        "name": "User109",
+        "role": "User",
+        "status": "Active"
+    },
+    {
+        "name": "User110",
+        "role": "User",
+        "status": "Active"
+    }
+]

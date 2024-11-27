@@ -14,3 +14,9 @@ export type post = {
   caption: string;
   comments: comment[];
 };
+
+export type member = {
+  name: string,
+  role: string,
+  status: string
+}

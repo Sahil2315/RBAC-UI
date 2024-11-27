@@ -12,5 +12,47 @@
                 "content": "Great Picture"
             }
         ]
+    },
+    {
+        "src": "/src/data/postimages/img2.jpg",
+        "caption": "Bridge the Caption",
+        "comments": [
+            {
+                "writer": "User101",
+                "content": "Beautiful Picture! Shows Your Professionalism with the Camera."
+            },
+            {
+                "writer": "User101",
+                "content": "Great Picture"
+            }
+        ]
+    },
+    {
+        "src": "/src/data/postimages/img3.jpg",
+        "caption": "Quack Quack",
+        "comments": [
+            {
+                "writer": "User101",
+                "content": "Beautiful Picture! Shows Your Professionalism with the Camera."
+            },
+            {
+                "writer": "User101",
+                "content": "Great Picture"
+            }
+        ]
+    },
+    {
+        "src": "/src/data/postimages/img4.jpg",
+        "caption": "Hello There",
+        "comments": [
+            {
+                "writer": "User101",
+                "content": "Beautiful Picture! Shows Your Professionalism with the Camera."
+            },
+            {
+                "writer": "User101",
+                "content": "Great Picture"
+            }
+        ]
     }
 ]

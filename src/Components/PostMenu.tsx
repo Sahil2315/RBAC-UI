@@ -3,7 +3,7 @@ import { post } from '../types';
 import { RootState } from "../data/store"
 import { useRef, useEffect, RefObject, useState } from "react"
 import senderSVG from "../assets/sender.svg"
-import { addComment } from "../data/postSlice"
+import { addComment, deleteComment, deletePost } from "../data/postSlice"
 import deleteSVG from "../assets/deleteLogo.svg"
 
 const PostMenu = ({mVisible, toggleMenu, currPost, permissions}: {mVisible: boolean, toggleMenu: (visible:boolean) => void, currPost: number, permissions: string[]}) => {
@@ -32,9 +32,23 @@ const PostMenu = ({mVisible, toggleMenu, currPost, permissions}: {mVisible: bool
             'content': newComment
         }))
     }
+    function removeComment(innindex: number){
+        dispatchComment(deleteComment({
+            'outer': currPost,
+            'inner': innindex
+        }))
+    }
+    function removePost(){
+        if(confirm("Please Confirm Deletion of this Post")){
+            toggleMenu(false)
+            dispatchComment(deletePost(currPost))
+            alert("Post Deleted")
+        }
+    }
   return (
-    <div className={`absolute cursor-pointer w-full h-full top-0 bg-white flex justify-center items-center bg-opacity-30 left-0 backdrop-blur-lg z-20 ${mVisible ? '' : 'hidden'}`}>
-        <div ref={centerRef} className="bg-indigo-100 cursor-normal h-[900px] overflow-y-auto rounded-lg flex flex-col px-20 py-20">
+    posts.length > 0 ?
+    <div className={`fixed cursor-pointer w-full h-full top-0 bg-white flex justify-center items-center bg-opacity-30 left-0 backdrop-blur-lg z-20 ${mVisible ? '' : 'hidden'}`}>
+        <div ref={centerRef} className="bg-indigo-100 relative cursor-normal h-[900px] overflow-y-auto rounded-lg flex flex-col px-20 py-20">
             <img className="h-[600px] w-[600px] rounded-lg" src={posts[currPost].src} alt={posts[currPost].caption} />
             <span className="mt-2 text-2xl font-semibold ml-2">{posts[currPost].caption}</span>
             <div className="ml-2 flex flex-col">
@@ -51,7 +65,7 @@ const PostMenu = ({mVisible, toggleMenu, currPost, permissions}: {mVisible: bool
                     posts[currPost].comments.map((comment, index) => {
                         return(
                             <div key={index} className="flex pr-[40px] relative flex-col mt-2">
-                                <button className={`absolute right-0 opacity-30 hover:opacity-100 ${permissions.includes("Edit") ? '' : 'hidden'}`}>
+                                <button onClick={() => removeComment(index)} className={`absolute right-0 opacity-30 hover:opacity-70 ${permissions.includes("Edit") ? '' : 'hidden'}`}>
                                     <img src={deleteSVG} className="w-[35px]" alt="delete" />
                                 </button>
                                 <span className="text-sm">{comment.writer}</span>
@@ -62,8 +76,12 @@ const PostMenu = ({mVisible, toggleMenu, currPost, permissions}: {mVisible: bool
                 }
                 
             </div>
+            <button onClick={removePost} className={permissions.includes("Delete") ? 'absolute top-0 right-0 mr-2 mt-2 opacity-55 hover:opacity-100': 'hidden'}>
+                <img src={deleteSVG} alt="Delete" className="w-[50px]" />
+            </button>
         </div>
     </div>
+    : <div />
   )
 }
 

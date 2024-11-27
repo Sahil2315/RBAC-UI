@@ -14,7 +14,7 @@ const PostsandMembers = ({memPermit, postPermit}: {memPermit: string[], postPerm
             <Posts permissions={postPermit} />
         </div>
         <div className={currPage == 1 ? '': 'hidden'}>
-            <Members1 />
+            <Members1 permissions={memPermit} />
         </div>
     </div>
   )

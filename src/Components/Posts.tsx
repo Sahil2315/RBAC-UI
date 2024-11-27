@@ -1,5 +1,4 @@
 import { useSelector } from "react-redux";
-import randomImg from "../data/postimages/img1.jpg"
 import { post } from '../types';
 import { RootState } from "../data/store";
 import PostMenu from "./PostMenu";
@@ -12,7 +11,6 @@ const Posts = ({permissions}: {permissions: string[]}) => {
   }, [posts])
   let [mVisible, toggleMenu] = useState(false)
   let [currPost, setCurrPost] = useState(0)
-  console.log(randomImg)
   return (
     <div className="h-full mx-56 mt-16 overflow-y-auto ">
       <span className="ml-12 text-2xl border-b-2 text-center">Posts:</span>

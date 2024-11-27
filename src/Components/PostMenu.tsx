@@ -4,6 +4,7 @@ import { RootState } from "../data/store"
 import { useRef, useEffect, RefObject, useState } from "react"
 import senderSVG from "../assets/sender.svg"
 import { addComment } from "../data/postSlice"
+import deleteSVG from "../assets/deleteLogo.svg"
 
 const PostMenu = ({mVisible, toggleMenu, currPost, permissions}: {mVisible: boolean, toggleMenu: (visible:boolean) => void, currPost: number, permissions: string[]}) => {
     let posts: post[] = useSelector((state: RootState) => state.posts)
@@ -50,7 +51,9 @@ const PostMenu = ({mVisible, toggleMenu, currPost, permissions}: {mVisible: bool
                     posts[currPost].comments.map((comment, index) => {
                         return(
                             <div key={index} className="flex pr-[40px] relative flex-col mt-2">
-                                <button className="absolute right-0 opacity-50 hover:opacity-100"></button>
+                                <button className={`absolute right-0 opacity-30 hover:opacity-100 ${permissions.includes("Edit") ? '' : 'hidden'}`}>
+                                    <img src={deleteSVG} className="w-[35px]" alt="delete" />
+                                </button>
                                 <span className="text-sm">{comment.writer}</span>
                                 <span className="text-lg">{comment.content}</span>
                             </div>

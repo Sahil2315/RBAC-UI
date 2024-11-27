@@ -9,6 +9,10 @@ type newComment = {
   index: number;
   content: string;
 };
+type dualIndex = {
+  outer: number,
+  inner: number
+}
 
 const postSlice = createSlice({
   name: "user",
@@ -23,6 +27,9 @@ const postSlice = createSlice({
         ...state[action.payload.index].comments,
       ];
     },
+    deleteComment: (state, action: PayloadAction<dualIndex>) => {
+      
+    }
   },
 });
 

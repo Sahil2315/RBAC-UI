@@ -1,6 +1,9 @@
 # Project - RBAC - Role Based Access Control for Internet Communities
 ## Technologies Used - React.js, Redux, TailwindCSS
 ## Concept - Multiple Types of Users in a Community - Hence Multiple Functionalities per Various Roles are provided to the Users.
+## Once you have Signed in using Valid Email and Password (email just needs to be in valid syntax and password should be 8 or more characters), you can navigate using this menu
+![image](https://github.com/user-attachments/assets/6427b1dd-8e9b-41ab-a666-6711b719b9e8)
+## To figure out what functionalityies are provided to each role.
 ### Admins are Allowed to Access Literally Anything Imaginable and Reachable on the Community's Platform.
 ### Moderators are Allowed to take over all the Posts and their Contributors as well as add and remove Contributors.
 ### Contributors are Allowed to View posts and share their Thoughts on the Posts through Comments.

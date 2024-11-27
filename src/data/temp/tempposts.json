@@ -1,0 +1,16 @@
+[
+    {
+        "src": "/src/data/postimages/img1.jpg",
+        "caption": "Jingle Bell Jingle Bell",
+        "comments": [
+            {
+                "writer": "User101",
+                "content": "Beautiful Picture! Shows Your Professionalism with the Camera."
+            },
+            {
+                "writer": "User101",
+                "content": "Great Picture"
+            }
+        ]
+    }
+]

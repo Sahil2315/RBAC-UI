@@ -1,6 +1,6 @@
 [
     {
-        "src": "/src/data/postimages/img1.jpg",
+        "src": "https://firebasestorage.googleapis.com/v0/b/chatapp-6f2d9.appspot.com/o/Images%2Fimg1.jpg?alt=media&token=6da14f9d-5212-4d08-9732-c6ec3b0a5cbb",
         "caption": "Jingle Bell Jingle Bell",
         "comments": [
             {
@@ -14,7 +14,7 @@
         ]
     },
     {
-        "src": "/src/data/postimages/img2.jpg",
+        "src": "https://firebasestorage.googleapis.com/v0/b/chatapp-6f2d9.appspot.com/o/Images%2Fimg2.jpg?alt=media&token=62eb4f90-79c3-4dcc-90fb-d5331b63306e",
         "caption": "Bridge the Caption",
         "comments": [
             {
@@ -28,7 +28,7 @@
         ]
     },
     {
-        "src": "/src/data/postimages/img3.jpg",
+        "src": "https://firebasestorage.googleapis.com/v0/b/chatapp-6f2d9.appspot.com/o/Images%2Fimg3.jpg?alt=media&token=f29e09be-3640-43c2-b1b2-054e8b52c116",
         "caption": "Quack Quack",
         "comments": [
             {
@@ -42,7 +42,7 @@
         ]
     },
     {
-        "src": "/src/data/postimages/img4.jpg",
+        "src": "https://firebasestorage.googleapis.com/v0/b/chatapp-6f2d9.appspot.com/o/Images%2Fimg4.jpg?alt=media&token=502a9030-5339-4f71-90e7-47d7e41e2963",
         "caption": "Hello There",
         "comments": [
             {

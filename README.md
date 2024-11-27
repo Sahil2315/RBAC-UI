@@ -4,8 +4,8 @@
 ### Admins are Allowed to Access Literally Anything Imaginable and Reachable on the Community's Platform.
 ### Moderators are Allowed to take over all the Posts and their Contributors as well as add and remove Contributors.
 ### Contributors are Allowed to View posts and share their Thoughts on the Posts through Comments.
-### Non Contributor Members need to View Posts and their Comments.
-### Non Members are Allowed to Join the Community First.
+### Non Contributor Members are Allowed to View Posts and their Comments.
+### Non Members need to Join the Community First.
 _______________________________________________________________________________________________________________________________________
 
 ## Note - Node.js 18+ and Git are Really Important for Running This Project Smoothly, Locally on your Device 

@@ -9,7 +9,7 @@ const Roles = ({permissions}: {permissions: string[]}) => {
       {
         roles.map((role, index) => {
           return(
-            <span>{role.name}</span>
+            <span key={index}>{role.name}</span>
           )
         })
       }
